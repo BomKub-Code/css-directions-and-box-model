@@ -1,1 +1,59 @@
-/* Start coding here */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box ช่วยควบคุมไม่ให้เนื้อหาดันเส้นขอบ (border) ล้นออกไป */
+    box-sizing: border-box; 
+    font-family: 'Sarabun', sans-serif;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  .header {
+    background-color: #93a8b9;
+    padding: 30px 40px;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 28px;
+    color: #1a3c5a;
+    font-weight: bold;
+  }
+
+  .container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .card {
+    background-color: #e8eff4;
+    /* นี่คือส่วนที่ทำให้เกิดเส้นครอบคลุมรอบการ์ดตามภาพครับ */
+    border: 2px solid #1a3c5a; 
+    padding: 20px;
+    width: 100%;
+    max-width: 650px; 
+  }
+
+  .card-title {
+    font-size: 20px;
+    color: #1a3c5a;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: #1a3c5a;
+    line-height: 1.6;
+  }

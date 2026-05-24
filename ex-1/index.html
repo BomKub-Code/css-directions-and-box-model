@@ -1,19 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
   <title>CSS Direction and Box Model - Ex 1</title>
+  <style>
+    /* นำโค้ดส่วนนี้ไปใส่ใน style.css ได้เลยครับ */
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-sizing: border-box ช่วยควบคุมไม่ให้เนื้อหาดันเส้นขอบ (border) ล้นออกไป */
+      box-sizing: border-box; 
+      font-family: 'Sarabun', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+    }
+
+    .header {
+      background-color: #93a8b9;
+      padding: 30px 40px;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 28px;
+      color: #1a3c5a;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .card {
+      background-color: #e8eff4;
+      /* นี่คือส่วนที่ทำให้เกิดเส้นครอบคลุมรอบการ์ดตามภาพครับ */
+      border: 2px solid #1a3c5a; 
+      padding: 20px;
+      width: 100%;
+      max-width: 650px; 
+    }
+
+    .card-title {
+      font-size: 20px;
+      color: #1a3c5a;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .card-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #1a3c5a;
+      line-height: 1.6;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Start coding here -->
-</body>
+  <header class="header">
+    <h1 class="logo">Travel Blog</h1>
+  </header>
 
+  <main class="container">
+    <div class="card">
+      <h2 class="card-title">คาเฟ่เชียงใหม่น่าเที่ยว 10 อันดับ 2040</h2>
+      <!-- อ้างอิงรูปภาพจากไฟล์ที่คุณอัปโหลด -->
+      <img src="./image.jpeg" alt="รูปภาพคาเฟ่" class="card-img">
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam
+        condimentum tempus diam, ultricies sollicitudinerat facilisis eget.
+        Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget
+        elementum ligula, vitae pharetraquam. Nullam at ligula sed metulementum
+        ligula, vitae pharetra quam. Nullam at ligu
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">สถานที่น่าเที่ยว 10 อันดับ 2140</h2>
+      <!-- อ้างอิงรูปภาพจากไฟล์ที่คุณอัปโหลด -->
+      <img src="./image.jpeg" alt="รูปภาพสถานที่ท่องเที่ยว" class="card-img">
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam
+        condimentum tempus diam, ultricies sollicitudinerat facilisis eget.
+        Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget
+        elementum ligula, vitae pharetraquam. Nullam at ligula sed metulementum
+        ligula, vitae pharetra quam. Nullam at ligu
+      </p>
+    </div>
+  </main>
+</body>
 </html>
